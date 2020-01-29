@@ -21,7 +21,7 @@ puts "Otvorena je tražena web stranica."
 # Log in
 
     if driver.find_element(:id, 'identifierId').displayed?
-        driver.find_element(:id, 'identifierId').send_keys 'banejudo'
+        driver.find_element(:id, 'identifierId').send_keys 'mailadress'
 
     puts "Log in je prikazan i može da se unese mail adresa."
 else
@@ -60,7 +60,7 @@ sleep 2
 # Password
 
     if driver.find_element(:name, 'password').displayed?
-        driver.find_element(:name, 'password').send_keys 'propalitet'
+        driver.find_element(:name, 'password').send_keys 'password'
 
         puts "Password je unešen."
     else
